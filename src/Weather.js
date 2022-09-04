@@ -14,8 +14,12 @@ const Weather = (props) => {
                 </box>
                 <div className='circleContainer'>
                     <div className="circle">
-                        <p>Temperature: {Math.round(data.main.temp)} °F</p>
-                        <p style={{fontSize: '16px'}}>Feels Like: {Math.round(data.main.feels_like)} °F</p>
+                        <img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}></img>
+                        <text className="temp" >{Math.round(data.main.temp)} °F</text>
+                        <text className="feelsLike">Feels Like: {Math.round(data.main.feels_like)} °F</text>
+                        <text className='high'>H:{Math.round(data.main.temp_max)}
+                            {'  '}L:{Math.round(data.main.temp_min)}
+                        </text>
                     </div>
                 </div>
                 <div className='date'>
