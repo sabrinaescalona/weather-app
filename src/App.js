@@ -2,6 +2,7 @@ import './App.css';
 import Weather from './Weather.js';
 import React, { useEffect, useState } from "react";
 import Geolocation from '@react-native-community/geolocation';
+// import Background from './Background.js';
 
 
 function App() {

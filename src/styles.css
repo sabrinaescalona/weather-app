@@ -15,12 +15,14 @@
 .weatherBox{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: rgba(14, 61, 162, 0.556);
     color: rgba(255, 255, 255, 0.895);
     width: 600px;
     border-radius: 0 0 18px 18px;
+    padding-top: 1em;
+    padding-bottom: 2.5em;
+    font-size: 20px;
 }
 
 .weatherHeader{
@@ -30,7 +32,7 @@
     background-color: rgba(14, 61, 162, 0.556);
     width: 600px;
     height: 2.25em;
-    padding-top: 10px;
+    padding-top: 18px;
     color: rgba(255, 255, 255, 0.895);
     border-radius: 18px 18px 0 0;
     
@@ -69,6 +71,7 @@
     justify-content: space-around;
     align-items: center;
     font-size: 18px;
+    padding-top: 1em;
 }
 
 .temp{

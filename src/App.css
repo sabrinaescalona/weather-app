@@ -1,5 +1,6 @@
 .weatherApp {
   background-color: #282c34;
+  background-image: url("./img/mist_night.jpg");
   min-height: 100vh;
   display: flex;
   flex-direction: column;
