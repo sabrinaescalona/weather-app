@@ -1,13 +1,11 @@
 import './App.css';
-import Weather from './Weather.js';
 import React, { useEffect, useState } from "react";
 import Geolocation from '@react-native-community/geolocation';
-// import Background from './Background.js';
+import Background from './Background.js';
 
 
 function App() {
   const API_KEY = "1454ed3aaede7b9e8409f598962c9b74";
-  const ICON_URL = 'https://openweathermap.org/img/w';
   const API_URL = 'https://api.openweathermap.org/data/2.5';
   const [latitude, setLat] = useState([]);
   const [longitude, setLong] = useState([]);
@@ -24,7 +22,7 @@ function App() {
       .then(res => res.json())
       .then(result => {
         setData(result);
-        console.warn(result);
+        console.warn("Fetched", result);
       });
     }
    
@@ -33,9 +31,9 @@ function App() {
   
   return (
     <div className="weatherApp">
-      {data.name ? (
-        <Weather weatherData={data}></Weather>
-      ) : console.warn("Waiting for data...")}
+        {data.name ? (
+          <Background weatherData={data}></Background>
+        ) : console.warn("Waiting for data...")}
     </div>
   );
 }

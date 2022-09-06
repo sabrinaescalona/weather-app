@@ -89,3 +89,16 @@
     margin-bottom: 70px;
 }
 
+/* .background{
+  background: url("./img/02n.jpg") no-repeat center center fixed; 
+  background-position: 'center center';
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
