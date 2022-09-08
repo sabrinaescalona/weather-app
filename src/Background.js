@@ -1,7 +1,6 @@
 import React from "react";
 import './styles.css';
 import Weather from './Weather.js';
-// import images from "./img";
 
 const imgMap = new Map();
 imgMap.set('01d', './img/01d.jpg');

@@ -2,6 +2,7 @@ import './App.css';
 import React, { useEffect, useState } from "react";
 import Geolocation from '@react-native-community/geolocation';
 import Background from './Background.js';
+import NavigationMenu from './NavigationMenu';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
   
   return (
     <div className="weatherApp">
+      <NavigationMenu></NavigationMenu>
         {data.name ? (
           <Background weatherData={data}></Background>
         ) : console.warn("Waiting for data...")}

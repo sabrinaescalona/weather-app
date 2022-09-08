@@ -89,16 +89,14 @@
     margin-bottom: 70px;
 }
 
-/* .background{
-  background: url("./img/02n.jpg") no-repeat center center fixed; 
-  background-position: 'center center';
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(14, 61, 162, 0.556);
+    color: azure;
+    font-weight: 800;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
