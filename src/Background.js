@@ -39,8 +39,6 @@ const setStyle = (path) => ({
 
 const Background = (props) => {
     let imgPath = imgMap.get(props.weatherData.weather[0].icon);
-    console.warn("ImgPath", imgPath);
-
     return (
         <div className="background" style={setStyle(imgPath)}>
             <Weather weatherData={props.weatherData}></Weather>
