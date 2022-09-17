@@ -11,14 +11,17 @@ function App() {
   const[city, setCity] = useState([]);
 
   const search = event => {
-    // console.warn("Inside of search event: ", event);
     if(event.key === 'Enter') {
-      // console.warn("Inside of if statement");
       fetch(`${API_URL}/weather?q=${event.target.value}&appid=${API_KEY}&units=imperial`)
       .then(res => res.json())
       .then(result => {
-        setData(result);
-        setCity("");
+        switch(result.cod) {
+          case "404":
+            alert("ERROR: City does not exist");
+          default:
+            setData(result);
+            setCity("");
+        }
         console.warn("Fetched", result);
       });
     }
