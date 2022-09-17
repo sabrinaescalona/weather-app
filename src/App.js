@@ -38,7 +38,7 @@ function App() {
         />
         {data.name ? (
           <Background weatherData={data}></Background>
-        ) : <Background weatherData={data}></Background>}
+        ) : console.log("Waiting for data...")}
     </div>
   );
 }
