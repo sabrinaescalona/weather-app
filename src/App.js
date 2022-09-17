@@ -1,6 +1,5 @@
 import './App.css';
-import React, { useEffect, useState } from "react";
-import Geolocation from '@react-native-community/geolocation';
+import React, { useState } from "react";
 import Background from './Background.js';
 
 
@@ -39,7 +38,7 @@ function App() {
         />
         {data.name ? (
           <Background weatherData={data}></Background>
-        ) : console.warn("Waiting for data...")}
+        ) : <Background weatherData={data}></Background>}
     </div>
   );
 }
